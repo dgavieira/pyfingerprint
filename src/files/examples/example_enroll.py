@@ -25,6 +25,7 @@ try:
 except Exception as e:
     print('The fingerprint sensor could not be initialized!')
     print('Exception message: ' + str(e))
+    input('Hit enter to exit')
     exit(1)
 
 ## Gets some sensor information
@@ -47,6 +48,7 @@ try:
 
     if ( positionNumber >= 0 ):
         print('Template already exists at position #' + str(positionNumber))
+        input('Hit enter to exit')
         exit(0)
 
     print('Remove finger...')
@@ -72,8 +74,10 @@ try:
     positionNumber = f.storeTemplate()
     print('Finger enrolled successfully!')
     print('New template position #' + str(positionNumber))
+    input('Hit enter to exit')
 
 except Exception as e:
     print('Operation failed!')
     print('Exception message: ' + str(e))
+    input('Hit enter to exit')
     exit(1)
