@@ -74,6 +74,9 @@ try:
     positionNumber = f.storeTemplate()
     print('Finger enrolled successfully!')
     print('New template position #' + str(positionNumber))
+    #alterado
+    print(positionNumber)
+    #alterado
     input('Hit enter to exit')
 
 except Exception as e:
